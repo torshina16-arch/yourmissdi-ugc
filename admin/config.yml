@@ -1,0 +1,58 @@
+backend:
+  name: github
+  repo: torsina16-arch/yourmissdi-ugc
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+site_url: https://yourmissdi-ugc.netlify.app
+display_url: https://yourmissdi-ugc.netlify.app
+
+collections:
+  - name: website
+    label: My Website
+    files:
+      - name: main
+        label: Website Content
+        file: content/site.json
+        format: json
+        fields:
+          - {label: Name, name: siteTitle, widget: string}
+          - {label: Top label, name: eyebrow, widget: string}
+          - {label: Hero description, name: heroText, widget: text}
+          - {label: Location, name: location, widget: string}
+          - {label: Hero photo, name: heroImage, widget: image}
+          - {label: About photo, name: aboutImage, widget: image}
+          - {label: About title, name: aboutTitle, widget: string}
+          - {label: About text, name: aboutText, widget: text}
+          - {label: Large statement, name: statement, widget: string}
+          - {label: Cloud background, name: cloudImage, widget: image}
+          - {label: Email, name: email, widget: string}
+          - {label: Instagram, name: instagram, widget: string}
+          - {label: YouTube, name: youtube, widget: string}
+          - {label: Telegram, name: telegram, widget: string}
+          - label: UGC Videos
+            name: videos
+            widget: list
+            summary: "{{fields.category}} — {{fields.title}}"
+            fields:
+              - {label: Category, name: category, widget: string}
+              - {label: Title, name: title, widget: string}
+              - {label: Video MP4, name: video, widget: file, required: false}
+              - {label: Cover image, name: cover, widget: image}
+          - label: UGC Photos
+            name: photos
+            widget: list
+            summary: "{{fields.alt}}"
+            fields:
+              - {label: Photo, name: image, widget: image}
+              - {label: Description, name: alt, widget: string}
+          - label: Services
+            name: services
+            widget: list
+            summary: "{{fields.number}} — {{fields.title}}"
+            fields:
+              - {label: Number, name: number, widget: string}
+              - {label: Service title, name: title, widget: string}
+              - {label: Description, name: text, widget: text}
+          - {label: Contact photo, name: contactImage, widget: image}

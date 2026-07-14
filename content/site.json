@@ -1,0 +1,87 @@
+{
+  "siteTitle": "Diana",
+  "eyebrow": "Chicago UGC Creator",
+  "heroText": "I create beauty, lifestyle, and travel content that feels natural, thoughtful, and genuinely worth watching.",
+  "location": "Based in Chicago, IL \u00b7 Available worldwide",
+  "heroImage": "/assets/images/hero.jpg",
+  "aboutImage": "/assets/images/about.jpg",
+  "aboutTitle": "Content that feels genuinely human.",
+  "aboutText": "My content blends clean visuals with a natural point of view. I focus on creating work that feels polished enough for a brand, but personal enough for people to trust.",
+  "statement": "Real moments. Thoughtful visuals. Content your audience can trust.",
+  "cloudImage": "/assets/images/clouds.jpg",
+  "email": "yourmissdi.ugc@gmail.com",
+  "instagram": "https://www.instagram.com/yourmissdi",
+  "youtube": "https://youtube.com/@yourmissdi",
+  "telegram": "https://t.me/yourmissisday",
+  "videos": [
+    {
+      "title": "Natural product storytelling",
+      "category": "Beauty & lifestyle",
+      "video": "",
+      "cover": "/assets/images/portrait.jpg"
+    },
+    {
+      "title": "Relatable social content",
+      "category": "Everyday lifestyle",
+      "video": "",
+      "cover": "/assets/images/lifestyle.jpg"
+    },
+    {
+      "title": "Location-based storytelling",
+      "category": "Travel & outdoors",
+      "video": "",
+      "cover": "/assets/images/travel.jpg"
+    }
+  ],
+  "photos": [
+    {
+      "image": "/assets/images/lifestyle.jpg",
+      "alt": "Lifestyle content"
+    },
+    {
+      "image": "/assets/images/hero.jpg",
+      "alt": "Diana in Chicago"
+    },
+    {
+      "image": "/assets/images/portrait.jpg",
+      "alt": "Creator portrait"
+    },
+    {
+      "image": "/assets/images/travel.jpg",
+      "alt": "Travel lifestyle content"
+    }
+  ],
+  "services": [
+    {
+      "number": "01",
+      "title": "UGC Videos",
+      "text": "Vertical short-form content for organic social media and paid advertising."
+    },
+    {
+      "number": "02",
+      "title": "Product Photography",
+      "text": "Clean lifestyle images for social posts, websites, and product listings."
+    },
+    {
+      "number": "03",
+      "title": "Voiceover & Tutorials",
+      "text": "Natural voiceover, demos, routines, reviews, and how-to content."
+    },
+    {
+      "number": "04",
+      "title": "Raw Footage",
+      "text": "High-quality unedited clips your team can repurpose into multiple creatives."
+    },
+    {
+      "number": "05",
+      "title": "Hook Variations",
+      "text": "Alternate hooks, CTAs, and versions for creative testing."
+    },
+    {
+      "number": "06",
+      "title": "Monthly Packages",
+      "text": "Ongoing content bundles for brands that need consistent fresh creative."
+    }
+  ],
+  "contactImage": "/assets/images/lifestyle.jpg"
+}

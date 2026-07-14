@@ -1,0 +1,26 @@
+YOURMISSDI CMS WEBSITE
+
+This package keeps the same website design and adds a visual editor at:
+/admin
+
+After the one-time GitHub + Netlify connection, you will be able to:
+- upload or replace MP4 videos;
+- change video covers and captions;
+- add, remove, and reorder video projects;
+- replace portfolio photographs;
+- edit About text, services, links, and contact details;
+- press Save and let Netlify update the website automatically.
+
+IMPORTANT
+The editor cannot save changes until the website is connected to a GitHub repository and GitHub authentication is configured.
+
+Suggested repository name:
+yourmissdi-ugc
+
+The file admin/config.yml currently contains:
+YOUR_GITHUB_USERNAME/yourmissdi-ugc
+
+After you create GitHub, this line must be updated with your real GitHub username.
+
+VIDEO SIZE
+Use compressed web MP4 files. GitHub does not accept an individual file over 100 MB.
