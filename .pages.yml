@@ -1,25 +1,144 @@
 media:
-  input: assets/images
-  output: /assets/images
+  input: assets/uploads
+  output: /assets/uploads
 
 content:
-  - name: Website
+  - name: website
     label: Website
-    path: content/site.json
     type: file
+    path: content/site.json
+    format: json
+
     fields:
-      - name: hero_title
-        label: Hero Title
+      - name: siteTitle
+        label: Name
         type: string
 
-      - name: hero_subtitle
-        label: Hero Subtitle
-        type: text
-
-      - name: about_title
-        label: About Title
+      - name: eyebrow
+        label: Top label
         type: string
 
-      - name: about_text
-        label: About Text
+      - name: heroText
+        label: Hero description
         type: text
+
+      - name: location
+        label: Location
+        type: string
+
+      - name: heroImage
+        label: Hero photo
+        type: image
+
+      - name: aboutImage
+        label: About photo
+        type: image
+
+      - name: aboutTitle
+        label: About title
+        type: string
+
+      - name: aboutText
+        label: About text
+        type: text
+
+      - name: statement
+        label: Large statement
+        type: text
+
+      - name: cloudImage
+        label: Cloud background
+        type: image
+
+      - name: email
+        label: Email
+        type: string
+
+      - name: instagram
+        label: Instagram
+        type: string
+
+      - name: youtube
+        label: YouTube
+        type: string
+
+      - name: telegram
+        label: Telegram
+        type: string
+
+      - name: videos
+        label: UGC Videos
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{category} — {title}"
+        fields:
+          - name: category
+            label: Category
+            type: string
+
+          - name: title
+            label: Title
+            type: string
+
+          - name: video
+            label: Video MP4
+            type: file
+            required: false
+            options:
+              categories:
+                - video
+              extensions:
+                - mp4
+                - webm
+                - mov
+              rename: safe
+
+          - name: cover
+            label: Cover image
+            type: image
+            options:
+              rename: safe
+
+      - name: photos
+        label: UGC Photography
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{alt}"
+        fields:
+          - name: image
+            label: Photo
+            type: image
+            options:
+              rename: safe
+
+          - name: alt
+            label: Photo description
+            type: string
+
+      - name: services
+        label: Services
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{number} — {title}"
+        fields:
+          - name: number
+            label: Number
+            type: string
+
+          - name: title
+            label: Service title
+            type: string
+
+          - name: text
+            label: Service description
+            type: text
+
+      - name: contactImage
+        label: Contact photo
+        type: image
