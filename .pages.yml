@@ -1,0 +1,25 @@
+media:
+  input: assets/images
+  output: /assets/images
+
+content:
+  - name: Website
+    label: Website
+    path: content/site.json
+    type: file
+    fields:
+      - name: hero_title
+        label: Hero Title
+        type: string
+
+      - name: hero_subtitle
+        label: Hero Subtitle
+        type: text
+
+      - name: about_title
+        label: About Title
+        type: string
+
+      - name: about_text
+        label: About Text
+        type: text
