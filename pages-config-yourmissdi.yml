@@ -1,0 +1,319 @@
+media:
+  - name: images
+    label: Images
+    input: assets/uploads/images
+    output: /assets/uploads/images
+    rename: safe
+    categories: [image]
+  - name: videos
+    label: Videos
+    input: assets/uploads/videos
+    output: /assets/uploads/videos
+    rename: safe
+    categories: [video]
+    extensions: [mp4, webm, mov]
+
+content:
+  - name: website
+    label: Complete Website
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: seo
+        label: SEO and Link Preview
+        type: object
+        fields:
+          - name: title
+            label: Browser and Google title
+            type: string
+          - name: description
+            label: Search description
+            type: text
+          - name: shareImage
+            label: Social share image
+            type: image
+            options:
+              media: images
+          - name: favicon
+            label: Favicon
+            type: image
+            required: false
+            options:
+              media: images
+
+      - name: theme
+        label: Site Colors and Backgrounds
+        type: object
+        fields:
+          - {name: ink, label: Main text color, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: paper, label: Main page background, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: ivory, label: About section background, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: cloud, label: Services section background, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: rose, label: Pink accent color, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: butter, label: Yellow accent color, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: muted, label: Secondary text color, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: navBackground, label: Navigation background, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: heroBackgroundStart, label: Hero gradient start, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: heroBackgroundMiddle, label: Hero gradient middle, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: heroBackgroundEnd, label: Hero gradient end, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: heroGlow, label: Hero glow color, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: statementOverlay, label: Cloud section overlay color, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: serviceCardBackground, label: Service card background, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: campaignCardBackground, label: Campaign card background, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: contactBackground, label: Contact section background, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+          - {name: contactText, label: Contact section text color, type: string, pattern: "^#[0-9A-Fa-f]{6}$"}
+
+      - name: brand
+        label: Brand and Logo
+        type: object
+        fields:
+          - {name: name, label: Creator name, type: string}
+          - {name: logoText, label: Header logo text, type: string}
+
+      - name: navigation
+        label: Header Navigation
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}"
+        fields:
+          - {name: label, label: Link label, type: string}
+          - {name: target, label: Link target, type: string, description: "Example: #about or a full URL"}
+
+      - name: hero
+        label: Hero Section
+        type: object
+        fields:
+          - {name: topLabel, label: Top label, type: string}
+          - {name: title, label: Main title, type: string}
+          - {name: description, label: Main description, type: text}
+          - {name: location, label: Location line, type: string}
+          - name: image
+            label: Hero image
+            type: image
+            options:
+              media: images
+          - {name: imageAlt, label: Hero image description, type: string}
+          - {name: topBadge, label: Badge above image, type: string}
+          - {name: bottomBadge, label: Badge below image, type: string}
+          - name: primaryButtons
+            label: Main buttons
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}"
+            fields:
+              - {name: label, label: Button text, type: string}
+              - {name: url, label: Button link, type: string}
+              - name: style
+                label: Button style
+                type: select
+                options:
+                  values:
+                    - {value: dark, label: Dark}
+                    - {value: light, label: Light}
+              - {name: newTab, label: Open in new tab, type: boolean}
+          - name: socialButtons
+            label: Social platform buttons
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}"
+            fields:
+              - {name: label, label: Platform name, type: string}
+              - {name: url, label: Link, type: string}
+              - name: style
+                label: Button style
+                type: select
+                options:
+                  values:
+                    - {value: dark, label: Dark}
+                    - {value: light, label: Light}
+              - {name: newTab, label: Open in new tab, type: boolean}
+
+      - name: about
+        label: About Section
+        type: object
+        fields:
+          - {name: sectionLabel, label: Small section label, type: string}
+          - {name: title, label: Main title, type: string}
+          - {name: text, label: Main text, type: text}
+          - name: image
+            label: About image
+            type: image
+            options:
+              media: images
+          - {name: imageAlt, label: Image description, type: string}
+          - {name: imageBadge, label: Badge on image, type: string}
+          - name: values
+            label: Why work with me cards
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - {name: title, label: Card title, type: string}
+              - {name: text, label: Card text, type: text}
+
+      - name: statement
+        label: Cloud Statement Section
+        type: object
+        fields:
+          - {name: text, label: Statement text, type: text}
+          - name: backgroundImage
+            label: Background image
+            type: image
+            options:
+              media: images
+
+      - name: videoSection
+        label: UGC Video Section
+        type: object
+        fields:
+          - {name: sectionLabel, label: Small section label, type: string}
+          - {name: title, label: Section title, type: string}
+          - {name: description, label: Section description, type: text}
+          - name: videos
+            label: Video cards
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{category} — {title}"
+            fields:
+              - {name: category, label: Category, type: string}
+              - {name: title, label: Video title, type: string}
+              - name: video
+                label: Video file
+                type: file
+                required: false
+                options:
+                  media: videos
+              - name: cover
+                label: Cover image
+                type: image
+                options:
+                  media: images
+              - {name: coverAlt, label: Cover description, type: string}
+
+      - name: photoSection
+        label: UGC Photography Section
+        type: object
+        fields:
+          - {name: sectionLabel, label: Small section label, type: string}
+          - {name: title, label: Section title, type: string}
+          - {name: description, label: Section description, type: text}
+          - name: photos
+            label: Photography
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{alt}"
+            fields:
+              - name: image
+                label: Photo
+                type: image
+                options:
+                  media: images
+              - {name: alt, label: Photo description, type: string}
+
+      - name: servicesSection
+        label: Services Section
+        type: object
+        fields:
+          - {name: sectionLabel, label: Small section label, type: string}
+          - {name: title, label: Section title, type: string}
+          - name: services
+            label: Service cards
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{number} — {title}"
+            fields:
+              - {name: number, label: Number, type: string}
+              - {name: title, label: Service title, type: string}
+              - {name: text, label: Service description, type: text}
+
+      - name: processSection
+        label: Process Section
+        type: object
+        fields:
+          - {name: sectionLabel, label: Small section label, type: string}
+          - {name: title, label: Section title, type: string}
+          - name: steps
+            label: Process steps
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{number} — {title}"
+            fields:
+              - {name: number, label: Step number, type: string}
+              - {name: title, label: Step title, type: string}
+              - {name: text, label: Step description, type: text}
+
+      - name: campaignSection
+        label: Collaboration Details Section
+        type: object
+        fields:
+          - {name: sectionLabel, label: Small section label, type: string}
+          - {name: title, label: Main title, type: string}
+          - {name: description, label: Left description, type: text}
+          - {name: cardTitle, label: Card title, type: string}
+          - name: options
+            label: Collaboration options
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{text}"
+            fields:
+              - {name: text, label: Option text, type: string}
+          - {name: rateLead, label: Bold rate text, type: string}
+          - {name: rateText, label: Additional rate text, type: text}
+
+      - name: contactSection
+        label: Contact Section
+        type: object
+        fields:
+          - {name: sectionLabel, label: Small section label, type: string}
+          - {name: title, label: Main title, type: text}
+          - {name: description, label: Description, type: text}
+          - name: image
+            label: Contact image
+            type: image
+            options:
+              media: images
+          - {name: imageAlt, label: Image description, type: string}
+          - name: buttons
+            label: Contact and social buttons
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}"
+            fields:
+              - {name: label, label: Button text, type: string}
+              - {name: url, label: Button link, type: string}
+              - name: style
+                label: Button style
+                type: select
+                options:
+                  values:
+                    - {value: dark, label: Dark}
+                    - {value: light, label: Light}
+              - {name: newTab, label: Open in new tab, type: boolean}
+
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - {name: leftText, label: Left footer text, type: string}
+          - {name: rightText, label: Right footer text, type: string}
