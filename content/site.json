@@ -132,18 +132,21 @@
         "category": "Outdoor & Wellness",
         "title": "Sun Care Campaign",
         "video": "/assets/uploads/videos/video2026-07-1417-50-47.mp4",
+        "cover": "/assets/uploads/images/photo2026-07-1419-07-58.jpg",
         "coverAlt": "Sun Care Campaign"
       },
       {
         "category": "Beauty & Lifestyle",
         "title": "GRWM Routine",
         "video": "/assets/uploads/videos/video2026-07-1417-55-54.mp4",
+        "cover": "/assets/uploads/images/photo2026-07-1421-53-27-1.jpg",
         "coverAlt": "Beauty & Lifestyle"
       },
       {
         "category": "Beauty & Skincare",
         "title": "Product Demo",
         "video": "/assets/uploads/videos/video2026-07-1417-51-16-1.mp4",
+        "cover": "/assets/uploads/images/photo2026-07-1419-08-27-1.jpg",
         "coverAlt": "Beauty & Skincare"
       }
     ]
