@@ -1,18 +1,14 @@
 # YourMissDi UGC Website
 
-Editable portfolio website for Diana.
+This version is fully editable through Pages CMS.
 
-## Website
-https://yourmissdi-ugc.netlify.app
+Editable areas include:
+- every visible heading, paragraph, label, badge, button, link, and footer line;
+- navigation links;
+- hero, About, portfolio, services, process, campaign, and contact content;
+- add/remove/reorder buttons, social links, About cards, videos, photos, services, steps, and campaign options;
+- all major section background colors, text colors, accent colors, hero gradient colors, and background images;
+- SEO title, description, social image, and favicon.
 
-## Editor
-https://yourmissdi-ugc.netlify.app/admin
-
-The visual editor manages:
-- UGC videos and cover images
-- portfolio photography
-- About text
-- services
-- social links and contact information
-
-This repository is designed to deploy automatically through Netlify.
+Main editor:
+https://app.pagescms.org

@@ -1,87 +1,305 @@
 {
-  "siteTitle": "Diana",
-  "eyebrow": "Chicago UGC Creator",
-  "heroText": "I create beauty, lifestyle, and travel content that feels natural, thoughtful, and genuinely worth watching.",
-  "location": "Based in Chicago, IL \u00b7 Available worldwide",
-  "heroImage": "/assets/images/hero.jpg",
-  "aboutImage": "/assets/images/about.jpg",
-  "aboutTitle": "Content that feels genuinely human.",
-  "aboutText": "My content blends clean visuals with a natural point of view. I focus on creating work that feels polished enough for a brand, but personal enough for people to trust.",
-  "statement": "Real moments. Thoughtful visuals. Content your audience can trust.",
-  "cloudImage": "/assets/images/clouds.jpg",
-  "email": "yourmissdi.ugc@gmail.com",
-  "instagram": "https://www.instagram.com/yourmissdi",
-  "youtube": "https://youtube.com/@yourmissdi",
-  "telegram": "https://t.me/yourmissisday",
-  "videos": [
+  "seo": {
+    "title": "Diana | Chicago UGC Creator",
+    "description": "Chicago-based UGC creator specializing in beauty, lifestyle, travel, and product storytelling.",
+    "shareImage": "/assets/images/hero.jpg",
+    "favicon": ""
+  },
+  "theme": {
+    "ink": "#202425",
+    "paper": "#fffdf9",
+    "ivory": "#fffaf1",
+    "cloud": "#d9e8ec",
+    "rose": "#e8b8c1",
+    "butter": "#fff0a8",
+    "muted": "#697477",
+    "navBackground": "#fffdf9",
+    "heroBackgroundStart": "#fffdf8",
+    "heroBackgroundMiddle": "#f6fbfa",
+    "heroBackgroundEnd": "#eef7f8",
+    "heroGlow": "#e8b8c1",
+    "statementOverlay": "#9dbec7",
+    "serviceCardBackground": "#ffffff",
+    "campaignCardBackground": "#fff0a8",
+    "contactBackground": "#202425",
+    "contactText": "#ffffff"
+  },
+  "brand": {
+    "name": "Diana",
+    "logoText": "DIANA"
+  },
+  "navigation": [
     {
-      "title": "Natural product storytelling",
-      "category": "Beauty & lifestyle",
-      "video": "",
-      "cover": "/assets/images/portrait.jpg"
+      "label": "About",
+      "target": "#about"
     },
     {
-      "title": "Relatable social content",
-      "category": "Everyday lifestyle",
-      "video": "",
-      "cover": "/assets/images/lifestyle.jpg"
+      "label": "Portfolio",
+      "target": "#portfolio"
     },
     {
-      "title": "Location-based storytelling",
-      "category": "Travel & outdoors",
-      "video": "",
-      "cover": "/assets/images/travel.jpg"
+      "label": "Services",
+      "target": "#services"
+    },
+    {
+      "label": "Process",
+      "target": "#process"
+    },
+    {
+      "label": "Contact",
+      "target": "#contact"
     }
   ],
-  "photos": [
-    {
-      "image": "/assets/images/lifestyle.jpg",
-      "alt": "Lifestyle content"
-    },
-    {
-      "image": "/assets/images/hero.jpg",
-      "alt": "Diana in Chicago"
-    },
-    {
-      "image": "/assets/images/portrait.jpg",
-      "alt": "Creator portrait"
-    },
-    {
-      "image": "/assets/images/travel.jpg",
-      "alt": "Travel lifestyle content"
-    }
-  ],
-  "services": [
-    {
-      "number": "01",
-      "title": "UGC Videos",
-      "text": "Vertical short-form content for organic social media and paid advertising."
-    },
-    {
-      "number": "02",
-      "title": "Product Photography",
-      "text": "Clean lifestyle images for social posts, websites, and product listings."
-    },
-    {
-      "number": "03",
-      "title": "Voiceover & Tutorials",
-      "text": "Natural voiceover, demos, routines, reviews, and how-to content."
-    },
-    {
-      "number": "04",
-      "title": "Raw Footage",
-      "text": "High-quality unedited clips your team can repurpose into multiple creatives."
-    },
-    {
-      "number": "05",
-      "title": "Hook Variations",
-      "text": "Alternate hooks, CTAs, and versions for creative testing."
-    },
-    {
-      "number": "06",
-      "title": "Monthly Packages",
-      "text": "Ongoing content bundles for brands that need consistent fresh creative."
-    }
-  ],
-  "contactImage": "/assets/images/lifestyle.jpg"
+  "hero": {
+    "topLabel": "Chicago UGC Creator",
+    "title": "Diana",
+    "description": "I create beauty, lifestyle, and travel content that feels natural, thoughtful, and genuinely worth watching.",
+    "location": "Based in Chicago, IL · Available worldwide",
+    "image": "/assets/images/hero.jpg",
+    "imageAlt": "Diana in Chicago",
+    "topBadge": "Authentic content for modern brands",
+    "bottomBadge": "Beauty · Lifestyle · Travel",
+    "primaryButtons": [
+      {
+        "label": "View my work",
+        "url": "#portfolio",
+        "style": "dark",
+        "newTab": false
+      },
+      {
+        "label": "Work with me",
+        "url": "mailto:yourmissdi.ugc@gmail.com",
+        "style": "light",
+        "newTab": false
+      }
+    ],
+    "socialButtons": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/yourmissdi",
+        "style": "light",
+        "newTab": true
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtube.com/@yourmissdi",
+        "style": "light",
+        "newTab": true
+      },
+      {
+        "label": "Telegram",
+        "url": "https://t.me/yourmissisday",
+        "style": "light",
+        "newTab": true
+      }
+    ]
+  },
+  "about": {
+    "sectionLabel": "Why work with me",
+    "title": "Content that feels genuinely human.",
+    "text": "My content blends clean visuals with a natural point of view. I focus on creating work that feels polished enough for a brand, but personal enough for people to trust.",
+    "image": "/assets/images/about.jpg",
+    "imageAlt": "Diana by Lake Michigan",
+    "imageBadge": "Chicago, IL",
+    "values": [
+      {
+        "title": "Authentic delivery",
+        "text": "Natural storytelling instead of overly scripted advertising."
+      },
+      {
+        "title": "Detail-oriented",
+        "text": "Thoughtful lighting, framing, hooks, pacing, and product presentation."
+      },
+      {
+        "title": "Bilingual creator",
+        "text": "Content available in English or Russian depending on your audience."
+      },
+      {
+        "title": "Reliable process",
+        "text": "Clear communication, organized workflow, and on-time delivery."
+      }
+    ]
+  },
+  "statement": {
+    "text": "Real moments. Thoughtful visuals. Content your audience can trust.",
+    "backgroundImage": "/assets/images/clouds.jpg"
+  },
+  "videoSection": {
+    "sectionLabel": "Selected work",
+    "title": "UGC video",
+    "description": "Short-form concepts for Reels, TikTok, organic social, and paid campaigns across beauty, lifestyle, and travel.",
+    "videos": [
+      {
+        "category": "Beauty & lifestyle",
+        "title": "Natural product storytelling",
+        "video": "",
+        "cover": "/assets/images/portrait.jpg",
+        "coverAlt": "Beauty and lifestyle content"
+      },
+      {
+        "category": "Everyday lifestyle",
+        "title": "Relatable social content",
+        "video": "",
+        "cover": "/assets/images/lifestyle.jpg",
+        "coverAlt": "Everyday lifestyle content"
+      },
+      {
+        "category": "Travel & outdoors",
+        "title": "Location-based storytelling",
+        "video": "",
+        "cover": "/assets/images/travel.jpg",
+        "coverAlt": "Travel and outdoor content"
+      }
+    ]
+  },
+  "photoSection": {
+    "sectionLabel": "Visual storytelling",
+    "title": "UGC photography",
+    "description": "Lifestyle imagery for social media, websites, email campaigns, and product pages.",
+    "photos": [
+      {
+        "image": "/assets/images/lifestyle.jpg",
+        "alt": "Lifestyle content"
+      },
+      {
+        "image": "/assets/images/hero.jpg",
+        "alt": "Diana in Chicago"
+      },
+      {
+        "image": "/assets/images/portrait.jpg",
+        "alt": "Creator portrait"
+      },
+      {
+        "image": "/assets/images/travel.jpg",
+        "alt": "Travel lifestyle content"
+      }
+    ]
+  },
+  "servicesSection": {
+    "sectionLabel": "Services",
+    "title": "Ways we can create together.",
+    "services": [
+      {
+        "number": "01",
+        "title": "UGC Videos",
+        "text": "Vertical short-form content for organic social media and paid advertising."
+      },
+      {
+        "number": "02",
+        "title": "Product Photography",
+        "text": "Clean lifestyle images for social posts, websites, and product listings."
+      },
+      {
+        "number": "03",
+        "title": "Voiceover & Tutorials",
+        "text": "Natural voiceover, demos, routines, reviews, and how-to content."
+      },
+      {
+        "number": "04",
+        "title": "Raw Footage",
+        "text": "High-quality unedited clips your team can repurpose into multiple creatives."
+      },
+      {
+        "number": "05",
+        "title": "Hook Variations",
+        "text": "Alternate hooks, CTAs, and versions for creative testing."
+      },
+      {
+        "number": "06",
+        "title": "Monthly Packages",
+        "text": "Ongoing content bundles for brands that need consistent fresh creative."
+      }
+    ]
+  },
+  "processSection": {
+    "sectionLabel": "The process",
+    "title": "Simple, clear, and collaborative.",
+    "steps": [
+      {
+        "number": "STEP 01",
+        "title": "Brief",
+        "text": "You share the product, goals, deliverables, timeline, and target audience."
+      },
+      {
+        "number": "STEP 02",
+        "title": "Concept",
+        "text": "We agree on creative direction, scope, usage rights, and rate."
+      },
+      {
+        "number": "STEP 03",
+        "title": "Create",
+        "text": "I film and edit the content based on the approved campaign details."
+      },
+      {
+        "number": "STEP 04",
+        "title": "Deliver",
+        "text": "You receive polished final files with the agreed revision round included."
+      }
+    ]
+  },
+  "campaignSection": {
+    "sectionLabel": "Collaboration details",
+    "title": "Built around your campaign.",
+    "description": "Every project is quoted based on deliverables, creative scope, turnaround time, and how the content will be used.",
+    "cardTitle": "Available collaboration options",
+    "options": [
+      {
+        "text": "One-time UGC projects"
+      },
+      {
+        "text": "Monthly content packages"
+      },
+      {
+        "text": "Organic social content"
+      },
+      {
+        "text": "Paid ad creatives"
+      },
+      {
+        "text": "Raw footage and extra hooks"
+      },
+      {
+        "text": "Custom packages upon request"
+      }
+    ],
+    "rateLead": "Rates available upon request.",
+    "rateText": "Paid usage, whitelisting, and exclusivity are quoted separately."
+  },
+  "contactSection": {
+    "sectionLabel": "Let's work together",
+    "title": "Let’s create something people actually want to watch.",
+    "description": "Based in Chicago, IL · Available for U.S. and international collaborations.",
+    "image": "/assets/images/lifestyle.jpg",
+    "imageAlt": "Diana",
+    "buttons": [
+      {
+        "label": "Email me",
+        "url": "mailto:yourmissdi.ugc@gmail.com",
+        "style": "light",
+        "newTab": false
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/yourmissdi",
+        "style": "light",
+        "newTab": true
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtube.com/@yourmissdi",
+        "style": "light",
+        "newTab": true
+      },
+      {
+        "label": "Telegram",
+        "url": "https://t.me/yourmissisday",
+        "style": "light",
+        "newTab": true
+      }
+    ]
+  },
+  "footer": {
+    "leftText": "© 2026 Diana — UGC Creator",
+    "rightText": "yourmissdi.ugc@gmail.com"
+  }
 }
