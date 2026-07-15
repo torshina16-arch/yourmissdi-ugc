@@ -67,9 +67,9 @@
       },
       {
         "label": "Work with me",
-        "url": "mailto:yourmissdi.ugc@gmail.com",
+        "url": "mailto:yourmissdi.ugc@gmail.com?subject=UGC%20Collaboration%20Inquiry",
         "style": "light",
-        "newTab": true
+        "newTab": false
       }
     ],
     "socialButtons": [
@@ -270,9 +270,9 @@
     "buttons": [
       {
         "label": "Email me",
-        "url": "mailto:yourmissdi.ugc@gmail.com",
+        "url": "mailto:yourmissdi.ugc@gmail.com?subject=UGC%20Collaboration%20Inquiry",
         "style": "light",
-        "newTab": true
+        "newTab": false
       },
       {
         "label": "Instagram",
